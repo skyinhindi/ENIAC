@@ -1,0 +1,230 @@
+  <!-- AakashChaudhary_2018-->
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+	<link href="bbseniac.ico" rel="shortcut icon"/>
+	<title>ENIAC</title>
+	<link  rel="stylesheet" type="text/css" href="assets/CSS/main.css">
+	<link  rel="stylesheet" type="text/css" href="assets/CSS/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/CSS/skeleton.css">
+	<link rel="stylesheet" type="text/css" href="assets/CSS/normalize.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	
+	
+	<script>
+		var URL=window.location.hostname;
+		history.replaceState(null ,"URL", null);
+		
+    function openSlideMenu(){
+      document.getElementById('side-menu').style.width = '100%';
+    }
+
+    function closeSlideMenu(){
+      document.getElementById('side-menu').style.width = '0';
+    }
+
+    function cardhover(){
+    	document.getElementByClass('event-icons').style.display = 'none';
+    }
+	</script>
+	
+</head>
+
+
+<body bgcolor="black">
+	<nav>
+		<a href="home.html"><img id="navlogo" src="Icons/logo1.jpg"/></a>
+		<center>
+			<ul class="navlists">
+				<li><a class="anch" href="home.html" >HOME</a></li>
+				<li><a  class="anch" href="home.html#about" >ABOUT</a></li>
+				<li><a class="anch" href="virus18.html" >VIRUS'18</a></li>
+				<li><a class="anch" href="register.html" >REGISTER</a></li>
+				<li><a  class="anch" href="team.html" >TEAM</a></li>
+			</ul>
+		</center>
+    <span class="open-slide" id="open-slide">
+      <a href="#" onclick="openSlideMenu()">
+        <svg width="30" height="30">
+            <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+            <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+            <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+        </svg>
+      </a>
+    </span>
+
+  <div id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+    <a href="home.html">Home</a>
+    <a href="home.html#about" onclick="closeSlideMenu()">About</a>
+    <a href="virus18.html">Virus'18</a>
+	<a href="team.html">Team</a>
+    <a href="register.html">Register</a>
+  </div>
+	</nav>
+<br>
+<section style="padding:1px;background:#2196F3;width:100%;">
+</section>
+<main>
+<center>
+<div  id="virus-head">
+ <a href="virus18.html" style="text-decoration:none;"><h1 id="timer-title" style="text-align:center; color:black;">VIRUS'19</h1></a>
+<h3 id="timer-date" style="text-align:center;color:black">26.07.19</h3>
+ <b>
+ <div id="countdowntimer">
+
+<h4></h4>
+
+
+<!-- Display the countdown timer in an element -->
+<p id="demo"></p>
+
+<script>
+
+// Set the date we're counting down to
+var countDownDate = new Date("jul 26, 2019 08:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now an the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + " Days " + hours + " Hours "
+  + minutes + " Minutes " + seconds + " Seconds ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "Event has ended";
+  }
+}, 1000);
+
+</script>
+</b>
+</center>
+</div>
+<br><br><br>
+    <!--VIRUS THEME-->
+	<center>
+	  <div id="events">
+			<div class="title"><h2>THEME</h2></div>
+			<p style="width:70%; font-size:14pt;" class="ch1">
+        <br><b style="color:#fff;">When society limits you, when your capabilitites are suppressed, when you fall short of your aspirations then it's time to break the ceiling, time to be that rebel, dare to tinker and "OVERCLOCK".
+        To surprise yourself and the world,to go beyond your default settings and outachieve every expectation. This year, in an attempt to break free from the monotany of limits, to bring out the best in you and ourselves, the ENIAC club presents <b style="color:#ffffff;">VIRUS'18</b> with the theme</b>
+        <br><h5><a  href="#" onclick="window.location='register.html'" style="text-decoration:none;color:black;"><b style="color:#ccc;">"OVERCLOCK"</b></a></h5>
+		</p>
+  <br>
+<!--<button class="btn btn-primary" onclick="window.location='events.html'" id="events-btn"style="color:#ffffff;">EVENTS</button>-->
+<section style="padding:1px;background:#2196F3;width:40%;box-shadow: 2px 2px 2px 2px #222;">
+</section>
+<h1 class="ch4" style="font-size: 32pt;">EVENTS</h1>
+</center>
+<br>
+<div>
+<center>
+	<ul>
+		<li class="event-li">
+			<div class="event-card" onhover="cardhover()">
+				<img src="images/quiz.png" class="event-icons"/>
+				<section class="event-details">
+					<h1 class="ch2" style="font-size: 28pt;color: #fff; background: #ccc;">QUIZ</h1>
+					<p class="ch2" style="font-size: 18pt;color: #65758e;">Participants: 2</p>
+					<p class="ch2" style="font-size: 18pt;color: #65758e;">Eligibility: open</p>
+					<p style="color: #000;">lorem ipsum dolor met.</p>
+			</section>
+			</div>
+		</li>
+		<li class="event-li">
+			<div class="event-card">
+				<img src="images/code.png" class="event-icons"/>
+				<section class="event-details">
+					<h1 class="ch2" style="font-size: 28pt;color: #fff; background: #ccc;">PROGRAMMING</h1>
+					<p class="ch2" style="font-size: 18pt;color: #65758e;">Participants: 2</p>
+					<p class="ch2" style="font-size: 18pt;color: #65758e;">Eligibility: open</p>
+					<p style="color: #000;">lorem ipsum dolor met.</p>
+			</section>
+			</div>
+		</li>
+		<li class="event-li">
+			<div class="event-card">
+				<img src="images/gaming.png" class="event-icons"/>
+				<section class="event-details">
+					<h1 class="ch2" style="font-size: 28pt;color: #fff; background: #ccc;">GAMING</h1>
+					<p class="ch2" style="font-size: 18pt;color: #65758e;">Participants: 2</p>
+					<p class="ch2" style="font-size: 18pt;color: #65758e;">Eligibility: open</p>
+					<p style="color: #000;">lorem ipsum dolor met.</p>
+			</section>
+			</div>
+		</li>
+	</ul>
+	<ul>
+		<li class="event-li">
+			<div class="event-card">
+				<img src="images/robot.png" class="event-icons"/>
+				<section class="event-details">
+					<h1 class="ch2" style="font-size: 28pt;color: #fff; background: #ccc;">ROBOTICS</h1>
+					<p class="ch2" style="font-size: 18pt;color: #65758e;">Participants: 2</p>
+					<p class="ch2" style="font-size: 18pt;color: #65758e;">Eligibility: open</p>
+					<p style="color: #000;">lorem ipsum dolor met.</p>
+				</section>
+			</div>
+		</li>
+		<li class="event-li">
+			<div class="event-card">
+				<img src="images/psicn.png" class="event-icons"/>
+				<section class="event-details">
+					<h1 class="ch2" style="font-size: 28pt;color: #fff; background: #ccc;">Digital Imaging</h1>
+					<p class="ch2" style="font-size: 18pt;color: #65758e;">Participants: 2</p>
+					<p class="ch2" style="font-size: 18pt;color: #65758e;">Eligibility: open</p>
+					<p style="color: #000;">lorem ipsum dolor met.</p>
+			</section>
+			</div>
+		</li>
+		<li class="event-li">
+			<div class="event-card">
+				<img src="images/Rubiks-Cube.png" class="event-icons"/>
+				<section class="event-details">
+					<h1 class="ch2" style="font-size: 28pt;color: #fff; background: #ccc;">CUBING</h1>
+					<p class="ch2" style="font-size: 18pt;color: #65758e;">Participants: 2</p>
+					<p class="ch2" style="font-size: 18pt;color: #65758e;">Eligibility: open</p>
+					<p style="color: #000;">lorem ipsum dolor met.</p>
+			</section>
+			</div>
+		</li>
+	</ul>
+</center>
+</div>
+<section style="padding:1px;background:#2196F3;width:100%;">
+</section>
+<br><br><br>
+<!--Footer-->
+<footer>
+<section style="padding:1px;background:#2196F3;width:100%;"></section>
+	<center>
+	<h3 class="ch2" style="font-size: 18pt;padding: 10px;top:5px;position: relative;color:#fff;">Developed by Aakash Chaudhary | &copy 2019 ENIAC Club.</h3>
+	</center>
+</footer>
+
+		<!-- Scripts -->
+
+			<script src="assets/JS/jquery.min.js"></script>
+			<script src="assets/JS/jquery.dropotron.min.js"></script>
+			<script src="assets/JS/skel.min.js"></script>
+			<script src="assets/JS/skel-viewport.min.js"></script>
+			<script src="assets/JS/util.js"></script>
+			<script src="assets/JS/main.js"></script>
+			<script src="assets/JS/navbar.js"></script>
+</body>
+</html>
